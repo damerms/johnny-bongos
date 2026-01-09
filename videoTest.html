@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Play/Pause button for HTML5 video using JavaScript</title>
+    <link href="johnnyBongos.css" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <video id="johnnyBongoVideo" poster="images/JohnnyBongosPlaysAnotherStarByStevieWonderPoster.png">
+            <source src="videos/JohnnyBongosPlaysAnotherStarByStevieWonder.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+        <p class="bongoBottom bongoBottomSmall">
+            <span>❛Another Star❜ by Stevie Wonder for Denise Sosa Mularz
+            </span>
+            <button id="videoButton1" class="videoButton">▶ Play</button>
+    </main>
+
+    <!-- Video JavaScript-->
+    <script>
+        const videoButton1 = document.querySelector("#videoButton1");
+        videoButton1.addEventListener("click", playPause);
+
+        function playPause() {
+            if (johnnyBongoVideo.paused) {
+                johnnyBongoVideo.play();
+                videoButton1.innerHTML = '▮▮ Pause';
+            }
+            else {
+                johnnyBongoVideo.pause();
+                videoButton1.innerHTML = '▶ Play';
+            }
+        } 
+    </script>
+</body>
+
+
+</html>

@@ -1,0 +1,225 @@
+@import url(https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap);
+
+/* Colors Gold - #ffd700, Coral- #ff7f50 */
+
+/* global*/
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+:root {
+  --shadow: black;
+  --coral: coral;
+  --white: floralwhite;
+  --brown: brown;
+  --green: green;
+  --gold: gold;
+  --flow-space: 1.5rem;
+}
+
+html,
+body {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  width: fit-content;
+  background: var(--coral);
+  background-image: linear-gradient(coral, gold, coral);
+  font-family: "Work Sans", "sans serif";
+  text-align: center;
+}
+.flow > *+* {
+	margin: var(--flow-space);
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  width: 100vw;
+  padding: 0.5rem 4.5rem 0 5.5rem;
+}
+
+svg {
+  width: 6rem;
+  height: 6rem;
+  margin-left: -1.25rem;
+  margin-right: -1.25rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  letter-spacing: 0.15rem;
+  color: var(--coral);
+  text-shadow: 6px 6px var(--shadow), 5px 5px var(--shadow),
+    5.5px 5.5px var(--shadow), 5.25px 5.25px var(--shadow),
+    5.75px 5.75px var(--shadow), 4px 4px var(--shadow),
+    4.5px 4.5px var(--shadow), 4.25px 4.25px var(--shadow),
+    4.75px 4.75px var(--shadow), 3px 3px var(--shadow),
+    3.5px 3.5px var(--shadow), 3.25px 3.25px var(--shadow),
+    3.75px 3.75px var(--shadow), 2px 2px var(--shadow),
+    2.5px 2.5px var(--shadow), 2.25px 2.25px var(--shadow),
+    2.75px 2.75px var(--shadow), 1px 1px var(--shadow),
+    1.5px 1.5px var(--shadow), 1.25px 1.25px var(--shadow),
+    1.75px 1.75px var(--shadow), 0.5px 0.5px var(--shadow),
+    0.25px 0.25px var(--shadow), 0.75px 0.75px var(--shadow);
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-variant: small-caps;
+}
+a:link {
+  color: var(--green);
+  border-width: 0.15rem;
+  line-height: 1.4;
+  text-transform: capitalize;
+  text-decoration-skip-ink: auto;
+  text-decoration: underline wavy;
+  -webkit-text-decoration: wavy underline;
+}
+
+a:visited,
+a:hover,
+a:active {
+  color: var(--brown);
+}
+
+a.wavyButton {
+  width: max-content; 
+  color: var(--green);
+  font-size: 1.5rem;
+  text-decoration-skip-ink: auto;
+  text-decoration: wavy underline overline var(--green);
+  padding: 0.5rem;
+  -webkit-text-decoration: wavy underline overline;
+  -moz-text-decoration-thickness: 1rem;
+}
+
+nav {
+  letter-spacing: 0.09rem;
+  font-weight: 600;
+  transform: rotate(-359deg);
+}
+
+nav > ul li {
+  display: inline-flex;
+  list-style: none;
+  padding-bottom: 0.25rem;
+}
+
+/* desktop bongo layout*/
+@media (min-width 40rem) {
+  main {
+    display: grid;
+    top: 0.1em;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "video";
+    grid-gap: 1.5rem;
+  }
+
+  .bongoContainer {
+    grid-area: video;
+    grid-column: ;
+  }
+}
+
+/* mobile bongo layout*/
+main {
+  width: 28rem;
+  margin: auto;
+  text-align: center;
+}
+
+.bongoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  align-self: center;
+}
+
+.bongoBottom {
+  clip-path: polygon(13.59% -25px, 88.09% -29.79%, 85.8% 125.07%, 79px 122.98%);
+  background-color: var(--white);
+  box-shadow: 5px 10px var(--brown);
+  filter: drop-shadow(0 0 20px var(--brown));
+  padding: 2rem;
+}
+
+.bongoBottomSmall {
+  place-content: center;
+  display: flow-root; 
+  width: min-content; 
+  clip-path: polygon(26.77% -9px, 81.12% -7.13%, 75.9% 113.64%, 103px 108.21%);
+  font-size: 1.1rem;
+  color: var(--brown);
+  margin: 0.25rem auto 2rem auto;
+  padding: 1.5rem 4.5rem 1rem 4.5rem;
+}
+
+span {
+  display: inline-block;
+  padding: 0 1.5rem 0 1.5rem;
+  text-align: center;
+}
+
+p.story {
+  clip-path: polygon(0.45% 1px, 97.67% 0.99%, 87.66% 104.18%, 67px 104.21%);
+  background-color: var(--white);
+  padding: 2rem 4.5rem;
+  font-size: 1.45rem;
+}
+
+/* video styles*/
+
+video.img {
+  position: relative;
+}
+
+video {
+  width: 14.55rem;
+  clip-path: polygon(0.38% 20px, 100.48% 6.43%, 87.36% 99.43%, 59px 99.22%);
+  object-fit: fill;
+}
+
+button.wavyButton {
+  cursor: pointer;
+  transition-duration: 0.4s;
+  width: 4rem;
+  height: 4rem;
+}
+
+.videoButton {
+  color: var(--green);
+  text-decoration: wavy underline overline var(--green);
+  width: max-content;
+  padding-top: 1rem;
+  font-size: 1.15rem;
+  border: none;
+  background-color: var(--white);
+  text-decoration-skip-ink: auto;
+  -webkit-text-decoration: wavy underline overline;
+  -moz-text-decoration-thickness: 1rem;
+  transform: rotate(354deg);
+}
+
+
+
+footer::before {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: fit-content;
+  margin: var(--flow-space);
+  content: '© Copyright Mermos Video Album Productions';
+}
+  
