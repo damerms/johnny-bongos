@@ -3,8 +3,14 @@
 
 ---
 
+### Tech Stack
+* **Languages:** HTML5, CSS3, JavaScript (ES6)
+* **Design/UI:** CSS Clip-path, Custom Illustration, Responsive Web Design
+* **SEO/Performance:** Semantic Markup, Organic SEO Architecture
+* **Deployment:** Netlify
+
 ### Project Overview
-I designed and coded the web presence for Johnny Bongos, a personal project created to showcase a musician's work during the pandemic. The site features a curated video album of songs requested by friends and family, providing a space for connection during a time of isolation. The build centers on creative UI experiments, including a custom-drawn bongo drum illustration and interactive navigation built with CSS clip-path.
+In 2020, I designed and coded a responsive performance archive for Johnny Bongos, featuring custom bongo illustrations, experimental CSS clip-path navigation, and a media-heavy video album curated during the pandemic.
 
 ### Portfolio Status
 This project is currently **Archived** and is intended for **showcase purposes only**.
@@ -17,6 +23,7 @@ This project is currently **Archived** and is intended for **showcase purposes o
 * **UI/UX Design:** Designed and prototyped experimental navigation layouts using CSS `clip-path` to push visual boundaries.
 * **Front-end Development:** Hand-coded the entire interface using semantic HTML and custom CSS, ensuring the site remained responsive across all devices.
 * **Multimedia Implementation:** Programmed custom JavaScript to manage the video album functionality, allowing for seamless playback of requested songs.
+* **Organic SEO:** Optimized site structure and markup to improve organic visibility and search engine performance.
 * **System Architecture:** Engineered the platform from the ground up to support a performant, media-heavy experience.
 
 ---
